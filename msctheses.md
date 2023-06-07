@@ -2,8 +2,7 @@
 title: MSc Theses
 layout: page
 ---
-###### All Master theses were supervised at the BioMMeda lab, UGent.   
-[ugent.be/ea/ibitech/en/research/biommeda](#)
+###### All Master theses were supervised at the [Biommeda lab](https://ugent.be/ea/ibitech/en/education/biommeda-master-thesis-topics.htm), UGent.   
 
 ### CFD Modelling of Liver Cancer Treatments
 * <div align="left">Targeted Drug Delivery for Liver Cancer: The Impact of User-Dependent Segmentation and Simulation Parameters on the Drug Carrier Distribution, 2021
