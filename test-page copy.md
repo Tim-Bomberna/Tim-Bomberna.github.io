@@ -1,5 +1,5 @@
 ---
-title: MSc Theses
+title: MSc Theses test
 layout: page
 ---
 
