@@ -45,7 +45,7 @@ author-name: Tim Bomberna
 # URL for the Image of the Author
 author-image: ./assets/images/face.jpg
 # 60 Words About the Author
-author-about: I'm a researcher in biomedical engineering at Ghent University. My research focuses on the development of a pretreatment planning to optimize liver cancer therapies. I specialize in computational fluid dyanmics (CFD), AI-enabled metamodelling, CAD design, and in vitro and ex vivo validation. Additionally, I supervise several Master theses each year at UGent and co-teach several courses from 1st Bachelor to 2nd Master.
+author-about: I'm a researcher in biomedical engineering at Ghent University. My research focuses on the development of a pretreatment planning tool to optimize liver cancer therapies. I specialize in computational fluid dyanmics (CFD), AI-enabled metamodelling, CAD design, and in vitro and ex vivo validation. Additionally, I supervise several Master theses each year at UGent and co-teach several courses from 1st Bachelor to 2nd Master.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.ugent.be/tbombern
 
