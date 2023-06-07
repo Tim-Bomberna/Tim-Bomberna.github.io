@@ -6,7 +6,7 @@ layout: page
 
 [This is a link](#)
 
-### CFD Modelling of Liver Cancer Treatments
+<div align="left"> ### CFD Modelling of Liver Cancer Treatments
 * Targeted Drug Delivery for Liver Cancer: The Impact of User-Dependent Segmentation and Simulation Parameters on the Drug Carrier Distribution, 2021
 * Targeted Drug Delivery for Liver Cancer: Modelling Microbubble Transport to Optimize Tumor Radiation Response, 2021
 * A Computational Model for Improved Magnetic Drug Targeting in Liver Cancer, 2021
