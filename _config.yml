@@ -22,32 +22,32 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
-facebook_username: /
-twitter_username: TimBomberna
-instagram_username: /
-linkedin_username: Tim Bomberna
-github_username:  Tim-Bomberna
-youtube_channel_id: /
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+email: Tim.Bomberna@UGent.be
+facebook_username: 
+twitter_username: 
+instagram_username: 
+linkedin_username: 
+github_username:  
+youtube_channel_id: 
+reddit_username: 
+behance_username: 
+dribbble_username:
+spotify_username: 
 
 # Google Analytics
 google-analytics: UA-163806439-1
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname: 
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Tim Bomberna
 # URL for the Image of the Author
 author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
 # 60 Words About the Author
-author-about: I'm a researcher in biomedical engineering at Ghent University. My research focuses on the development of a pretreatment planning to optimize liver cancer therapies. 
+author-about: I'm a researcher in biomedical engineering at Ghent University. My research focuses on the development of a pretreatment planning to optimize liver cancer therapies. I specialize in computational fluid dyanmics (CFD), AI-enabled metamodelling, CAD design, and in vitro and ex vivo validation. Additionally, I supervise several Master theses each year at UGent and co-teach several courses from 1st Bachelor to 2nd Master.   
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-url: https://github.ugent.be/tbombern
 
 # SASS
 sass:
