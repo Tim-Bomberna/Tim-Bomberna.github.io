@@ -1,68 +1,31 @@
 ---
-title: Sample Post
+title: What is CFD? 
 layout: post
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
-description: A sample post to show how the content will look and how will different
-  headlines, quotes and codes will be represented.
+description: An introduction to the world of computational fluid dynamics.
 tags:
 - sample
 - post
 - test
 ---
 
-This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
-For more information about writing markdown you can checkout the following markdown cheatsheets:
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
-* [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+# What is CFD? 
+Computational fluid dynamics, or CFD, may sound like a complex term, but I assure you it's not. To explain what the term means, let's split it in two. 'Computational' refers to any technique that uses a computer or computer-like system to perform calculations. 'Fluid dynamics' refers to the behavior and movement of fluids. For the human body, we study a special class of fluids, namely 'biofluids'. The most famous biofluid is blood, which flows from the heart through the arteries to the organs, and then flows back through the veins to the heart, where it is re-oxygenized. In cases where we use computer models to calculate how blood flows through an organ of interest, we are performing 'CFD'. 
 
----
+# What does CFD look like? 
+A computer model is a vague term that warrants more explanation. In general, a CFD model is determined by its geometry, its governing equations and its boundary conditions. Let's have a closer look at each of these elements to figure out what constitutes a CFD model. 
 
-# This is the h1 text
-## This is the h2 text
-### This is the h3 text
-#### This is the h4 text
-##### This is the h5 text
-###### This is the h6 text
+## Geometry 
+If we want to study blood flow in an artery, our geometry is simply this artery. Usually, we use medical images (CT or MRI) to reconstruct the patient-specific shape of an artery. On a medical image, all tissues appear black or white, or something in-between. If the doctor injects contrast fluid in the artery of interest, the artery will show up in bright white on the medical image, which makes it much easier for us to recognize its shape. The process of annotating the artery on the medical image is called 'segmentation'. Once the segmentation has been done, a 3D-reconstruction of the artery can be made. Usually, this 3D-reconstruction is divided into little elements or blocks. This process is called 'meshing'. The reason why we mesh relates to the next part, the governing equations. 
 
-**Bold Text in the post will look like:**<br>
-**This text is Bold**
+## Governing equations 
+Both blood flow in arteries, oil flow in pipes and airflow in the lungs are governed by the Navier-Stokes equations. By solving these equations, for example, we can calculate the pressure drop along an artery, which tells us something about how easily blood can flow through an artery that might be severely blocked. However, the Navier-Stokes are unsolvable. Therefore, we typically divide the geometry in small sub-domains ('meshing') and approximate the Navier-Stokes equations in each of these domains. The smaller the domains, the more accurate the approximation will be, but the longer the solution will take. The larger the domains, the less accurate, but the overall model will be cheaper. 
 
-**Italic Text in the post will look like:**<br>
-*This text is Italic*
-
-> Quotes on your post will look like this
-
-`Codes on your post will look like this`
-
-**Link in the post will look like:**<br>
-[This is a link](#)
-
-**Bullet list in the post will look like:**
-* Item 1
-* Item 2
-* Item 3
-* Item 4
-* Item 5
-
-**Number list in the post will look like:**
-1. Item 1
-2. Item 2
-3. Item 3
-4. Item 4
-5. Item 5
+## Boundary conditions 
+At last, we look at boundary conditions. Since our geometry typically consists only of a part of the human body, we are esentially looking at an isolated problem which, in reality, is not isolated at all. Therefore, our boundary conditions connect our separated geometry to the rest of the 'world' (or body). At the inlet of the geometry, we can prescribe how much blood flows into the geometry. If the artery bifurcates, the geometry will contain multiple outlets, and our boundary conditions can prescribe the blood flow distribution across these outlets. Once our inlet and outlet boundary conditions are set, our computer model will use the Navier-Stokes equations to solve how blood flows between inlet and outlets. 
 
 **Images in the post will look like:**<br>
 ![Test Image](/WhatATheme/assets/images/1280x720%20Placeholder.png)
-
-**Normal text in the post will look like**<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.
-
-Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.
-
-Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.
-
-Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.
 
 **Giphy Gifs will look like:**<br>
 <iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
